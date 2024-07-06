@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: oauth2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oauth2
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+  mustache:
+    servlet:
+      expose-request-attributes: true
+
